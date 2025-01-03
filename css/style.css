@@ -55,7 +55,9 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: white; }
+  /* color: white;  */
+  color: #182444; 
+}
 
 
 .border-2 {
@@ -1775,4 +1777,9 @@ h1, h2, h3, h4, h5,
 
   .icn-clr{
     color: #b56c05 !important;
+  }
+
+  .footer-logo{
+    width: 5%;
+    height: 5%;
   }
