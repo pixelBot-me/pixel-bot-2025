@@ -84,12 +84,33 @@ jQuery(document).ready(function($) {
 			}
 		}) 
 
+		
+		// Close the menu and remove active class when clicking a menu link
+		$('.site-mobile-menu a').on('click', function () {
+			if ($('body').hasClass('offcanvas-menu')) {
+			  $('body').removeClass('offcanvas-menu');
+			  $('.js-menu-toggle').removeClass('active');
+			}
+		  });
+		
+		  // Handle resizing to remove offcanvas-menu class on larger screens
+		  $(window).resize(function () {
+			var $this = $(this),
+			  w = $this.width();
+		
+			if (w > 768 && $('body').hasClass('offcanvas-menu')) {
+			  $('body').removeClass('offcanvas-menu');
+			  $('.js-menu-toggle').removeClass('active');
+			}
+		  });
+
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
 			var container = $(".site-mobile-menu");
 			if (!container.is(e.target) && container.has(e.target).length === 0) {
 				if ( $('body').hasClass('offcanvas-menu') ) {
 					$('body').removeClass('offcanvas-menu');
+					$('.js-menu-toggle').removeClass('active');
 				}
 			}
 		});
