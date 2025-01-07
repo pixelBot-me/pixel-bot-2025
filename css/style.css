@@ -338,7 +338,8 @@ h1, h2, h3, h4, h5,
   top: 0;
   top: 15px;
   width: 100%;
-  background: #21325E; 
+  /* background: #21325E;  */
+  background: #182444;
 }
   .site-navbar .site-logo {
     position: relative;
@@ -638,7 +639,8 @@ h1, h2, h3, h4, h5,
   .sticky-wrapper .shrink {
     padding-top: 10px;
     padding-bottom: 10px ;/* hmmmmmmmmm he hahahahha */
-    /* background-color: #8bc34a !important; */
+    /* background-color: #182444 !important; */
+    background-color: #21325E !important;
 
     
   }
@@ -1888,6 +1890,11 @@ h1, h2, h3, h4, h5,
     .sticky-wrapper + .site-blocks-cover {
       margin-top: 10%;
     }
+
+    .footer-logo {
+      right: 8%;
+    }
+
   }
 
   .card:hover {
@@ -1900,6 +1907,14 @@ h1, h2, h3, h4, h5,
 
     
   }
+
+  .d-inline-block.d-xl-none.ml-md-0.mr-auto.py-1 {
+    width: auto !important;
+    max-width: none !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  
   /* html {
     scroll-behavior: smooth !important;
   } */
