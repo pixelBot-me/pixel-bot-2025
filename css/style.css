@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5,
   z-index: 1999;
   position: absolute;
   top: 0;
-  top: 15px;
+  top: 20px;
   width: 100%;
   /* background: #21325E;  */
   background: #182444;
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5,
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
           font-family: 'icomoon'; }
-      .site-navbar .site-navigation .site-menu .has-children .dropdown {
+      /* .site-navbar .site-navigation .site-menu .has-children .dropdown {
         visibility: hidden;
         opacity: 0;
         top: 100%;
@@ -413,9 +413,11 @@ h1, h2, h3, h4, h5,
         margin-top: 20px;
         margin-left: 0px;
         background: #fff;
+        background-color: #21325E;
+
         -webkit-transition: 0.2s 0s;
         -o-transition: 0.2s 0s;
-        transition: 0.2s 0s; }
+        transition: 0.2s 0s; } */
         .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top {
           position: absolute; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
@@ -448,18 +450,22 @@ h1, h2, h3, h4, h5,
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a {
             padding: 9px 20px;
             display: block; }
-            .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
+            /* .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
               background: #f4f5f9;
-              color: #25262a; }
+              background-color: #21325E;
+
+              color: #25262a; } */
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
             content: "\e315";
             right: 20px; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > .dropdown, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > ul {
             left: 100%;
             top: 0; }
-          .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
+          /* .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
             background: #f4f5f9;
-            color: #25262a; }
+  background-color: #21325E;
+
+            color: #25262a; } */
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
         color: #21325E; }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
@@ -1923,10 +1929,10 @@ h1, h2, h3, h4, h5,
     scroll-behavior: smooth !important;
   } */
 
-  /* CSS for iPhone devices */
+  /* CSS for iPhone devices autoscrall ristrict*/
 @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (hover: none) and (pointer: coarse) {
   html, body {
-    overscroll-behavior: none; /* Prevent scrolling triggered by touch gestures */
+    overscroll-behavior: none; 
     scroll-behavior: auto; /* Disable smooth scrolling */
   }
 
@@ -1935,3 +1941,174 @@ h1, h2, h3, h4, h5,
     overflow: hidden !important; /* Prevent scrolling within a specific container */
   }
 }
+
+
+/* added header menu animation */
+/* Desktop view only */
+@media (min-width: 992px) {
+  .site-menu .nav-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .site-menu .nav-link::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 5%; 
+    left: 0;
+    width: 5%;
+    text-align: center;
+    color: inherit;
+    transition: transform 0.3s ease;
+    transform: translateY(-10%);
+  }
+
+  .site-menu .nav-link:hover::after {
+    transform: translateY(0); 
+  }
+
+  .site-menu .nav-link {
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+  }
+
+  .site-menu .nav-link:hover {
+    transform: translateY(-10%);
+  }
+}
+
+
+/* Animation for shaking the phone icon */
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+/* Animation for email highlight */
+@keyframes highlight {
+  0% {
+    color: #f39c12; /* Highlight color */
+    transform: scale(1);
+  }
+  50% {
+    color: #e74c3c; /* Alternate highlight color */
+    transform: scale(1.1); /* Slight zoom */
+  }
+  100% {
+    color: #f39c12;
+    transform: scale(1);
+  }
+}
+
+/* Apply animations */
+.icon-phone {
+  animation: shake 1s infinite ease-in-out;
+  display: inline-block; /* Ensure proper animation */
+}
+
+.icon-envelope {
+  animation: highlight 1.5s infinite ease-in-out;
+  display: inline-block; /* Ensure proper animation */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  background: #21325E;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: transparent;
+  
+  
+}
+
+/* Show dropdown on hover */
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  
+}
+
+/* For Nested Dropdowns */
+.dropdown-menu .dropdown-menu {
+  left: 100%;
+  top: 0;
+  display: none;
+}
+
+.dropdown-menu li:hover > .dropdown-menu {
+  display: block;
+  
+}
+
+/* Responsive Design */
+/* @media (max-width: 991px) {
+  .dropdown-menu {
+    position: static;
+    display: none;
+  }
+
+  .dropdown-menu li:hover > .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+    color: white !important;
+
+  }
+
+  .site-menu .nav-link {
+    padding: 10px;
+    display: block;
+    color: white !important;
+
+  }
+} */

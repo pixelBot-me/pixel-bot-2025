@@ -62,18 +62,12 @@
           </div>
           <div class="col-md-6 text-center text-lg-left order-lg-1">
             <p class="mb-0 d-inline-flex">
-              <span class="mr-3">
-                <a href="tel:+918308606183" class="d-flex align-items-center bold-me">
-                  <span class="icon-phone mr-2 bold-me theme-clr fs-4"></span>
-                  <span class="theme-clr bold-me">+91-8208498358</span>
-                </a>
-              </span>
-              <span>
-                <a href="mailto:help@thepixelbot.com" class="d-flex align-items-center">
-                  <span class="icon-envelope mr-2 theme-clr bold-me fs-4"></span>
-                  <span class="theme-clr bold-me">help@thepixelbot.com</span>
-                </a>
-              </span>
+              <span class="mr-3"><a href="tel:+918308606183" class="d-flex align-items-center bold-me"><span
+                    class="icon-phone mr-2 bold-me theme-clr"></span><span
+                    class="theme-clr bold-me">+91-8208498358</span></a></span>
+              <span><a href="mailto:help@thepixelbot.com" class="d-flex align-items-center"><span
+                    class="icon-envelope mr-2 theme-clr bold-me"></span><span
+                    class="theme-clr bold-me">help@thepixelbot.com</span></a></span>
             </p>
           </div>
         </div>
@@ -91,42 +85,39 @@
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
+
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link text-uppercase wt-text" data-text="Home">Home</a></li>
-                <li><a href="#about-us" class="nav-link text-uppercase wt-text" data-text="About">About</a></li>
-                <li><a href="#portfolio-section" class="nav-link text-uppercase wt-text" data-text="Portfolio">Portfolio</a></li>
-
-                <!-- this menu only for desktop mode -->
-                <li class="dropdown ">
-                  <a href="#services-sections" class="nav-link text-uppercase wt-text" data-text="Services">Services ></a>
-                  <ul class="dropdown-menu bg-primary">
-                    <li><a href="#option1" class="nav-link wt-text text-capitalize">branding</a></li>
-                    
-                    <li><a href="#option2" class="nav-link wt-text text-capitalize">web graphic design</a></li>
-                    <li><a href="#option1" class="nav-link wt-text text-capitalize">website development</a></li>
-                    <li><a href="#option1" class="nav-link wt-text text-capitalize">digital marketing</a></li>
-                    <li><a href="#option1" class="nav-link wt-text text-capitalize">content management</a></li>
-                    <li class="dropdown">
-                      <a href="#option3" class="nav-link wt-text text-uppercase d-flex align-items-center" >taining <span class="fs-3"> &nbsp; ></span></a>
-                      <!-- <ul class="dropdown-menu bg-primary">
-                        <li><a href="#test1" class="nav-link wt-text text-capitalize">web graphic design</a></li>
-                        <li><a href="#test2" class="nav-link wt-text text-capitalize">UI/UX design</a></li>
-                        <li><a href="#test3" class="nav-link wt-text text-capitalize">fullstack development</a></li>
-                        <li><a href="#test3" class="nav-link wt-text text-capitalize">digital marketing</a></li>
-                        <li><a href="#test3" class="nav-link wt-text text-capitalize">video/audio edining</a></li>
-                        <li><a href="#test3" class="nav-link wt-text text-capitalize">SD animation</a></li>
-                      </ul> -->
-                    </li>
-                  </ul>
+                <li><a href="#home-section" class="nav-link text-uppercase wt-text">Home</a></li>
+                <li>
+                  <a href="#about-us" class="nav-link text-uppercase wt-text">About</a>
                 </li>
+                <li><a href="#portfolio-section" class="nav-link text-uppercase wt-text">portfolio</a></li>
 
-                <!-- this menu only for mobile device whenever menu icon accors -->
+                <!-- <li><a href="#services-sections" class="nav-link text-uppercase wt-text">Services</a></li> -->
+
                 <!-- <li class="has-children">
+                  <a href="#services-sections" class="nav-link text-uppercase wt-text">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="#about-section">Graphic Design</a></li>
+                    <li><a href="#team-section">UI/UX Design</a></li>
+                    <li><a href="#team-section">Web Design</a></li>
+                    <li><a href="#team-section">Digital Marketing</a></li>
+                    <li><a href="#team-section">Motion Graphics & Video/Audio Editing</a></li>
+                  </ul>
+                </li> -->
+                
+                <li class="has-children">
                   <a href="#services-sectionswt-text" class="nav-link text-uppercase wt-text">Services</a>
                   <ul class="dropdown">
                     <li><a href="#about-section" class="wt-text">Branding</a></li>
+                    <li><a href="#team-section" class="wt-text">Web graphic Design</a></li>
+                    <li><a href="#team-section" class="wt-text">Digital Marketin</a></li>
+                    <li><a href="#team-section" class="wt-text">Content Management</a></li>
+
+
                     <li class="has-children">
                       <a href="#team-section" class="wt-text">Training</a>
+                      <!-- Submenu for Web Design -->
                       <ul class="dropdown">
                         <li><a href="#option1" class="wt-text">Graphic Designer</a></li>
                         <li><a href="#option2" class="wt-text">UI/UX Design</a></li>
@@ -134,20 +125,18 @@
                         <li><a href="#option3" class="wt-text">Digital Marketing</a></li>
                         <li><a href="#option3" class="wt-text">Video/Audio Editing</a></li>
                         <li><a href="#option3" class="wt-text">SD Animation</a></li>
+
+
+
                       </ul>
                     </li>
-                    <li><a href="#team-section" class="wt-text">Web graphic Design</a></li>
-                    <li><a href="#team-section" class="wt-text">Digital Marketin</a></li>
-                    <li><a href="#team-section" class="wt-text">Content Management</a></li>
                   </ul>
-                </li> -->
+                </li>
 
-                <li><a href="#contact-section" class="nav-link text-uppercase wt-text" data-text="Contact">Contact</a></li>
+                <li><a href="#contact-section" class="nav-link text-uppercase wt-text">Contact</a></li>
               </ul>
             </nav>
-
           </div>
-
           <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-1" style="position: relative; top: 3px;"><a href=""
               class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3 wt-text"></span></a></div>
         </div>
@@ -881,7 +870,7 @@
 
 
 
-            <form id="myForm" action="" class="p-5 bg-white bg-transparent shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <form action="" class="p-5 bg-white bg-transparent shadow-lg p-3 mb-5 bg-body-tertiary rounded">
 
               <h2 class="h4 mb-5">Contact Form</h2>
 
