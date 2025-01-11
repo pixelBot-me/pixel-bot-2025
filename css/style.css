@@ -2112,6 +2112,13 @@ h1, h2, h3, h4, h5,
 
   .dropdown-menu.active {
     display: block;
+  }
+
+  .dropdown-menu .mob.active {
+    display: block;
+    left: -1% !important;
+    top: 100% !important;
+
     /* margin-left: 0px !important; */
   }
 }
