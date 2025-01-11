@@ -2059,11 +2059,9 @@ h1, h2, h3, h4, h5,
   text-decoration: none;
 }
 
-.dropdown-menu a:hover {
+.dropdown-menu a:hover, .dropdown-menu .dropdown .bg:hover {
   background: #f8a22d;
 }
-
-
 
 /* Show dropdown on hover */
 .dropdown:hover > .dropdown-menu {
