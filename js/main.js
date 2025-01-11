@@ -278,3 +278,15 @@ jQuery(document).ready(function($) {
 	siteScroll();
 
 });
+
+// script for does not toggle in mobile device services menu
+function toggleDropdown(element) {
+	const parentLi = element.closest('li');
+	const dropdownMenu = parentLi.querySelector('.dropdown-menu');
+  
+	if (dropdownMenu) {
+	  // Toggle visibility of the dropdown
+	  dropdownMenu.classList.toggle('active');
+	}
+  }
+  

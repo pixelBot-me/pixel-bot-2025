@@ -479,7 +479,7 @@ h1, h2, h3, h4, h5,
           opacity: 1; }
 
 .site-mobile-menu {
-  width: 300px;
+  width: 100%;
   position: fixed;
   right: 0;
   z-index: 2000;
@@ -646,7 +646,7 @@ h1, h2, h3, h4, h5,
     padding-top: 10px;
     padding-bottom: 10px ;/* hmmmmmmmmm he hahahahha */
     /* background-color: #182444 !important; */
-    background-color: #21325E !important;
+    background-color: #203771 !important;
 
     
   }
@@ -2032,7 +2032,6 @@ h1, h2, h3, h4, h5,
 
 
 
-
 /* General Dropdown Styling */
 .dropdown {
   position: relative;
@@ -2056,20 +2055,19 @@ h1, h2, h3, h4, h5,
 
 .dropdown-menu a {
   display: block;
-  padding: 10px 20px;
+  /* padding: 8px 18px; */
   text-decoration: none;
 }
 
 .dropdown-menu a:hover {
-  background: transparent;
-  
-  
+  background: #f8a22d;
 }
+
+
 
 /* Show dropdown on hover */
 .dropdown:hover > .dropdown-menu {
   display: block;
-  
 }
 
 /* For Nested Dropdowns */
@@ -2081,7 +2079,6 @@ h1, h2, h3, h4, h5,
 
 .dropdown-menu li:hover > .dropdown-menu {
   display: block;
-  
 }
 
 /* Responsive Design */
@@ -2101,14 +2098,34 @@ h1, h2, h3, h4, h5,
 
   .dropdown.active .dropdown-menu {
     display: block;
-    color: white !important;
-
   }
 
   .site-menu .nav-link {
     padding: 10px;
     display: block;
-    color: white !important;
-
   }
 } */
+
+/* Mobile Dropdown Styling */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu.active {
+    display: block;
+    /* margin-left: 0px !important; */
+  }
+}
+
+.nav-link {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important; /* Ensure content flows left to right */
+}
+
+.nav-link .arrow {
+  order: 1; /* Explicitly position the arrow after the text */
+  margin-left: 5px !important; /* Add spacing */
+}
+
