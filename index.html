@@ -12,6 +12,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -92,11 +93,11 @@
                       </div>
                     </div>
                     <ul class="dropdown-menu">
-                      <li><a href="#option1" class="nav-link wt-text text-capitalize">Branding</a></li>
-                      <li><a href="#option2" class="nav-link wt-text text-capitalize">Web Graphic Designing</a></li>
-                      <li><a href="#option1" class="nav-link wt-text text-capitalize">Website Development</a></li>
-                      <li><a href="#option1" class="nav-link wt-text text-capitalize">Digital Marketing</a></li>
-                      <li><a href="#option1" class="nav-link wt-text text-capitalize">Content Management</a></li>
+                      <li><a href="./pages/branding.html" class="nav-link wt-text text-capitalize">Branding</a></li>
+                      <li><a href="./pages/webGraphicDesign.html" class="nav-link wt-text text-capitalize">Web Graphic Designing</a></li>
+                      <li><a href="./pages/webDevelopment.html" class="nav-link wt-text text-capitalize">Website Development</a></li>
+                      <li><a href="./pages/digitalMarketing.html" class="nav-link wt-text text-capitalize">Digital Marketing</a></li>
+                      <li><a href="./pages/contentManagement.html" class="nav-link wt-text text-capitalize">Content Management</a></li>
                       <li class="dropdown">
                         <div class="d-flex align-items-center bg">
                           <div>
@@ -108,12 +109,12 @@
                           </div>
                         </div>
                         <ul class="dropdown-menu mob">
-                          <li><a href="#test1" class="nav-link wt-text text-capitalize">Web Graphic Designer</a></li>
-                          <li><a href="#test2" class="nav-link wt-text text-capitalize">UI/UX Design</a></li>
-                          <li><a href="#test2" class="nav-link wt-text text-capitalize">Fullstack Development</a></li>
-                          <li><a href="#test2" class="nav-link wt-text text-capitalize">Digital Marketing</a></li>
-                          <li><a href="#test2" class="nav-link wt-text text-capitalize">Video/Audio Editing</a></li>
-                          <li><a href="#test3" class="nav-link wt-text text-capitalize">SD Animation</a></li>
+                          <li><a href="./pages/training/webGraphicDesign.html" class="nav-link wt-text text-capitalize">Web Graphic Designer</a></li>
+                          <li><a href="./pages/training/uiUxDesign.html" class="nav-link wt-text text-capitalize">UI/UX Design</a></li>
+                          <li><a href="./pages/training/fullstackDevelopment.html" class="nav-link wt-text text-capitalize">Fullstack Development</a></li>
+                          <li><a href="./pages/training/digitalMarketing.html" class="nav-link wt-text text-capitalize">Digital Marketing</a></li>
+                          <li><a href=".//pages/training/videoAudioEditing.html" class="nav-link wt-text text-capitalize">Video/Audio Editing</a></li>
+                          <li><a href="./pages/training/sdAnimation.html" class="nav-link wt-text text-capitalize">SD Animation</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -439,46 +440,132 @@
         </div>
       </div>
       
-      <section class="site-section" id="contact-section">
+      <!-- <section class="site-section bg-theme " id="contact-section">
         <div class="container">
           <div class="row mb-5 mt-3">
             <div class="col-12 text-center">
-              <h2 class="site-section-heading">Contact Us</h2>
+              <h2 class="site-section-heading wt-text">Contact Us</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 mb-5">
               <form id="myForm" action="" class="p-5 bg-white bg-transparent shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                <h2 class="h4 mb-5">Contact Form</h2>
+                <h2 class="h4 mb-5 wt-text">Contact Form</h2>
                 <div class="row form-group">
                   <div class="col-md-6 mb-3 mb-md-0">
-                    <label class="text-black" for="name">Name</label>
+                    <label class="wt-text" for="name">Name</label>
                     <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
                   </div>
                   <div class="col-md-6 mb-3 mb-md-0">
-                    <label class="text-black" for="email">Email</label>
+                    <label class="wt-text" for="email">Email</label>
                     <input type="text" id="email" class="form-control" placeholder="Enter Your Email Id">
                   </div>
                 </div>
                 <div class="row form-group">
                   <div class="col-md-12">
-                    <label class="text-black" for="message">Message</label>
+                    <label class="wt-text" for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="7" class="form-control"
                       placeholder="Write your notes or questions here..."></textarea>
                   </div>
                 </div>
                 <div class="row form-group">
                   <div class="col-md-12">
-                    <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                    <input type="submit" value="Send Message" class="btn btn-warning btn-md text-white">
                   </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
-      </section>
 
-      <footer class="footer bg-theme py-5 mt-3">
+      </section> -->
+  <section class="contact-sec sec-pad mb-0" id="contact-section">
+    <!-- Success Toast -->
+    <!-- <div id="successToast" class="toast align-items-center text-bg-success border-0 mt-5" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" style="position: fixed; top: 20px; right: 20px;">
+      <div class="d-flex">
+        <div class="toast-body">
+          Form submitted successfully!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div> -->
+
+    <!-- Error Toast -->
+    <!-- <div id="errorToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" style="position: fixed; top: 20px; right: 20px;">
+      <div class="d-flex">
+        <div class="toast-body">
+          An error occurred while submitting the form.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div> -->
+    <div class="container py-5" >
+      <div class="row justify-content-center mb-5 mt-3">
+        <div class="col-md-7 text-center">
+          <h2 class="site-section-heading wt-text">Contact Us</h2>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-md-6">
+          <div class="contact-detail">
+            <div class="d-flex align-items-center animated-title">
+              <h1 class="section-title wt-text">Say&nbsp;Hello</h1>
+              <span class="wave-hand fs-sz" title="Hello!!😀">👋🏼</span>
+            </div>
+            <ul class="contact-ul wt-text">
+              <li class="animated-icon  d-flex align-items-center">
+                <!-- <i class="fa-solid fa-location-dot "></i> -->
+                <div class="bounce">
+                  📍
+                </div>
+                <a href="" class="wt-text" ><b>91, Ram Nagar, Ram Mandir, Delhi</b></a>
+              </li>
+              <li class="animated-icon d-flex align-items-center">
+                <!-- <i class="fa fa-phone shake"></i> -->
+
+                <div class="shake">
+                  📞
+                </div>
+                <a href="tel:08510004495" class="wt-text"><b> 0255000XXXX</b></a>or
+                <a href="tel:08510005495" class="wt-text"><b>0251600XXXX</b></a>
+              </li>
+              <li class="animated-icon d-flex align-items-center">
+                <!-- <i class="icon-envelope mail"></i> -->
+                <div class="mail">
+                  📩
+                </div>
+                <a href="mailto:demounknown@gmail.com" class=" wt-text"><b> demounknown@gmail.com</b></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <form action="#" method="post">
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="name" class="wt-text">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" class="inptFld" required />
+              </div>
+              <div class="col-sm-6">
+                <label for="email" class="wt-text">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" class="inptFld" required />
+              </div>
+              <div class="col-12">
+                <label for="message" class="wt-text">Message</label>
+                <textarea class="inptFld" id="message" name="message" placeholder="Your Message..." required></textarea>
+              </div>
+              <div class="col-12">
+                <input type="submit" name="submit" value="SUBMIT" class="btn btn-warning px-3 bold-me" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+
+      <footer class="footer bg-theme py-5">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-4 mt-4 col-lg-4 text-sm-start">
@@ -573,5 +660,7 @@
     </script>
     <script src="js/main.js"></script>
     <script src="js/disable-ios-scroll.js"></script>
+    <script src="js/formHandler.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>
