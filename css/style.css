@@ -2506,11 +2506,9 @@ main {
 
 		&:hover {
 			background: radial-gradient(
-				circle at 50% 45%,
-				rgba(243, 152, 5, 0.943) 0%,
+				circle at 50% 75%,
+				rgb(97, 96, 96) 0%,
 				#1e1c1e 60%
-        
-        /* #182444 */
 			);
 			box-shadow: 0 4px 10px #182444, inset 2px 2px 2px #393939;
 
