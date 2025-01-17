@@ -290,3 +290,17 @@ function toggleDropdown(element) {
 	}
   }
   
+  // New function to handle navigation and prevent dropdown toggle for specific links
+  function navigateToPage(event, url) {
+	// Check if it's a mobile view
+	if (window.innerWidth <= 767) {
+	  window.location.href = url;
+	} else {
+	  // For desktop, let the dropdown toggle work
+	  toggleDropdown(event.target);
+	  window.location.href = url;
+	}
+  
+	// Prevent the default link behavior
+	event.preventDefault();
+  }

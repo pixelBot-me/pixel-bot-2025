@@ -1,11 +1,445 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="../pixibot.png">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pixel Bot</title>
 </head>
-<body>
-    <h1>web graphic design</h1>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="site-wrap">
+        <div class="site-mobile-menu site-navbar-target bg-theme wt-text">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle site-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        <div class="top-bar py-2" id="home-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-lg-right order-lg-2">
+                        <ul class="social-media m-0 p-0">
+                            <li><a href="" class="p-2"><span class="icon-facebook bold-me theme-clr"></span></a></li>
+                            <li><a href="" class="p-2"><span class="icon-twitter bold-me theme-clr"></span></a></li>
+                            <li><a href="" class="p-2"><span class="icon-instagram bold-me theme-clr"></span></a></li>
+                            <li><a href="" class="p-2"><span class="icon-linkedin bold-me theme-clr"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center text-lg-left order-lg-1">
+                        <p class="mb-0 d-inline-flex">
+                            <span class="mr-3">
+                                <a href="tel:+918308606183" class="d-flex align-items-center bold-me">
+                                    <span class="icon-phone mr-2 bold-me theme-clr fs-4"></span>
+                                    <span class="theme-clr bold-me">+91-8208498358</span>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="mailto:help@thepixelbot.com" class="d-flex align-items-center">
+                                    <span class="icon-envelope mr-2 theme-clr bold-me fs-4"></span>
+                                    <span class="theme-clr bold-me">help@thepixelbot.com</span>
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="site-navbar py-1 js-sticky-header site-navbar-target " role="banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-11 col-xl-2 ">
+                        <h1 class="mb-0 site-logo"><a href="../index.html" class="mb-0"><img class=""
+                                    src="../images/pixelbot-logo.svg" alt=""> </a></h1>
+                    </div>
+                    <div class="col-12 col-md-10 d-none d-xl-block">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li><a href="../index.html" class="nav-link text-uppercase wt-text"
+                                        data-text="Home">Home</a></li>
+                                <li><a href="../index.html#about-us" class="nav-link text-uppercase wt-text"
+                                        data-text="About">About</a></li>
+                                <li><a href="../index.html#portfolio-section" class="nav-link text-uppercase wt-text"
+                                        data-text="Portfolio">Portfolio</a></li>
+                                <li class="dropdown">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <a href="#services-sections" class="nav-link text-uppercase wt-text"
+                                                onclick="toggleDropdown(this)">Services</a>
+                                        </div>
+                                        <div>
+                                            <span class="arrow fs-2" onclick="toggleDropdown(this)">&#9662;</span>
+                                        </div>
+                                    </div>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../../pixel-bot-2025/pages/branding.html"
+                                                class="nav-link wt-text text-capitalize">Branding</a></li>
+                                        <li><a href="../../pixel-bot-2025/pages/webGraphicDesign.html"
+                                                class="nav-link wt-text text-capitalize">Web Graphic Designing</a></li>
+                                        <li><a href="../../pixel-bot-2025/pages/webDevelopment.html"
+                                                class="nav-link wt-text text-capitalize">Website Development</a></li>
+                                        <li><a href="../../pixel-bot-2025/pages/digitalMarketing.html"
+                                                class="nav-link wt-text text-capitalize">Digital Marketing</a></li>
+                                        <li><a href="../../pixel-bot-2025/pages/contentManagement.html"
+                                                class="nav-link wt-text text-capitalize">Content Management</a></li>
+                                        <li class="dropdown">
+                                            <div class="d-flex align-items-center bg">
+                                                <div>
+                                                    <a href="#option3"
+                                                        class="nav-link text-uppercase wt-text text-capitalize"
+                                                        onclick="toggleDropdown(this)">Training</a>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-3 wt-text" onclick="toggleDropdown(this)"> ></span>
+                                                </div>
+                                            </div>
+                                            <ul class="dropdown-menu mob">
+                                                <li><a href="./pages/training/webGraphicDesign.html"
+                                                        class="nav-link wt-text text-capitalize">Web Graphic
+                                                        Designer</a></li>
+                                                <li><a href="./pages/training/uiUxDesign.html"
+                                                        class="nav-link wt-text text-capitalize">UI/UX Design</a></li>
+                                                <li><a href="./pages/training/fullstackDevelopment.html"
+                                                        class="nav-link wt-text text-capitalize">Fullstack
+                                                        Development</a></li>
+                                                <li><a href="./pages/training/digitalMarketing.html"
+                                                        class="nav-link wt-text text-capitalize">Digital Marketing</a>
+                                                </li>
+                                                <li><a href=".//pages/training/videoAudioEditing.html"
+                                                        class="nav-link wt-text text-capitalize">Video/Audio Editing</a>
+                                                </li>
+                                                <li><a href="./pages/training/sdAnimation.html"
+                                                        class="nav-link wt-text text-capitalize">SD Animation</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#contact-section" class="nav-link text-uppercase wt-text"
+                                        data-text="Contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                    <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-1" style="position: relative; top: 3px;"><a
+                            href="" class="site-menu-toggle js-menu-toggle text-black"><span
+                                class="icon-menu h3 wt-text"></span></a></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="site-section testimonial-wrap" id="about-us">
+            <div class="container mb-5  mt-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2 class="site-section-heading text-center theme-clr text-uppercase">content management</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <div class="testimonial">
+                        <blockquote class="mb-5">
+                            <div clase=" py-3 lh-base justify-para">
+                                <b clase="fs-3 theme-clr">About StudioWe </b>
+                                believe in fostering creativity and innovation, equipping our students with practical
+                                skills to excel in
+                                a fast-changing digital world. With expert instructors, real-world projects, and
+                                personalized guidance,
+                                we ensure our learners are industry-ready from day one.
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 bg-transparent">
+                <div class="accordion" id="accordionExample">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item bg-transparent ">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button py-2 theme-clr bold-me" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                OUR STORY
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body theme-clr lh-lg">
+                                <p class="justify-para paragraph">PixelBot Studio began with a simple idea: bridging
+                                    creativity with
+                                    technology to
+                                    shape future
+                                    innovators. Founded by a team of passionate designers and tech enthusiasts, we
+                                    recognized a growing
+                                    demand for practical IT education that went beyond theory. Our goal was to create a
+                                    space where
+                                    students could explore their creativity, master digital tools, and gain
+                                    industry-relevant skills.
+                                </p>
+                                <p class="justify-para"> From humble beginnings, we’ve grown into a vibrant learning
+                                    community, offering
+                                    a range of
+                                    specialized courses in Graphic Design, UI/UX, Motion Graphics, Video/Audio Editing,
+                                    and Digital
+                                    Marketing. With every project, every class, and every student, our story evolves.
+                                </p>
+                                <p class="justify-para"> At PixelBot Studio, we’re not just building careers—we’re
+                                    shaping dreams into
+                                    realities. Join us on
+                                    this journey and become part of a legacy that’s transforming the future, one pixel
+                                    at a time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item bg-transparent">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed theme-clr bold-me" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                OUR MISSION
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body theme-clr lh-lg">
+                                <p class="justify-para paragraph">At PixelBot Studio, our mission is to empower
+                                    individuals with the
+                                    skills,
+                                    tools, and confidence
+                                    needed to thrive in the digital age. We aim to bridge the gap between education and
+                                    industry by
+                                    providing hands-on training in creative and IT fields like Graphic Design, UI/UX,
+                                    Motion Graphics,
+                                    Video/Audio Editing, and Digital Marketing.</p>
+
+                                <p class="justify-para">Our focus is on fostering innovation, creativity, and practical
+                                    expertise,
+                                    ensuring every student is
+                                    equipped to succeed in real-world challenges. We strive to create a learning
+                                    environment that nurtures
+                                    personal growth, professional development, and career readiness.</p>
+
+                                <p class="justify-para">PixelBot Studio exists to transform passion into careers and
+                                    help students
+                                    become future-ready
+                                    leaders in the digital landscape.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-sec sec-pad mb-0" id="contact-section">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5 mt-3">
+                    <div class="col-md-7 text-center">
+                        <h2 class="site-section-heading wt-text">Contact Us</h2>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-md-6">
+                        <div class="contact-detail">
+                            <div class="d-flex align-items-center animated-title">
+                                <h1 class="section-title wt-text">Say&nbsp;Hello</h1>
+                                <span class="wave-hand fs-sz" title="Hello!!😀">👋🏼</span>
+                            </div>
+                            <ul class="contact-ul wt-text">
+                                <li class="animated-icon  d-flex align-items-center">
+                                    <!-- <i class="fa-solid fa-location-dot "></i> -->
+                                    <div class="bounce">
+                                        📍
+                                    </div>
+                                    <a href="" class="wt-text"><b>91, Ram Nagar, Ram Mandir, Delhi</b></a>
+                                </li>
+                                <li class="animated-icon d-flex align-items-center">
+                                    <!-- <i class="fa fa-phone shake"></i> -->
+
+                                    <div class="shake">
+                                        📞
+                                    </div>
+                                    <a href="tel:08510004495" class="wt-text"><b> 0255000XXXX</b></a>or
+                                    <a href="tel:08510005495" class="wt-text"><b>0251600XXXX</b></a>
+                                </li>
+                                <li class="animated-icon d-flex align-items-center">
+                                    <!-- <i class="icon-envelope mail"></i> -->
+                                    <div class="mail">
+                                        📩
+                                    </div>
+                                    <a href="mailto:demounknown@gmail.com" class=" wt-text"><b>
+                                            demounknown@gmail.com</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="name" class="wt-text">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" class="inptFld"
+                                        required />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="email" class="wt-text">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Email Address"
+                                        class="inptFld" required />
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="wt-text">Message</label>
+                                    <textarea class="inptFld" id="message" name="message" placeholder="Your Message..."
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <input type="submit" name="submit" value="SUBMIT"
+                                        class="btn btn-warning px-3 bold-me" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer bg-theme py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 mt-4 col-lg-4 text-sm-start">
+                        <div class="information">
+                            <h6 class="footer-heading text-uppercase text-white fw-bold">Services</h6>
+                            <ul class="list-unstyled footer-link mt-4">
+                                <li class="mb-1"><a href="" class="text-white text-decoration-none fw-semibold">Graphic
+                                        Design</a></li>
+                                <li class="mb-1"><a href="" class="text-white text-decoration-none fw-semibold">UI/UX
+                                        Design</a></li>
+                                <li class="mb-1"><a href="" class="text-white text-decoration-none fw-semibold">Web
+                                        Design</a></li>
+                                <li class="mb-1"><a href="" class="text-white text-decoration-none fw-semibold">Degital
+                                        Marketing</a>
+                                </li>
+                                <li class="mb-1"><a href="" class="text-white text-decoration-none fw-semibold">Motion
+                                        Graphics &
+                                        Video/Audio Editing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-4 col-lg-4 text-sm-start">
+                        <div class="social">
+                            <h6 class="footer-heading text-uppercase text-white fw-bold">Social links</h6>
+                            <ul class="list-inline my-4">
+                                <li class="d-flex"><a href="" class="p-2"><span
+                                            class="icon-facebook bold-me wt-text fs-6">
+                                            facebook</span></a></li>
+                                <li class="d-flex"><a href="" class="p-2"><span
+                                            class="icon-twitter bold-me wt-text fs-6">
+                                            twitter</span></a></li>
+                                <li class="d-flex"><a href="" class="p-2"><span
+                                            class="icon-instagram bold-me wt-text fs-6">
+                                            instagram</span></a></li>
+                                <li class="d-flex"><a href="" class="p-2"><span
+                                            class="icon-linkedin bold-me wt-text fs-6">
+                                            linkedin</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 mt-4 col-lg-4 text-sm-start">
+                        <div class="contact">
+                            <h6 class="footer-heading text-uppercase text-white fw-bold">Contact Us</h6>
+                            <address class="mt-4 m-0 text-white mb-1"><i class="bi bi-pin-map fw-semibold"></i> New
+                                South Block ,
+                                Phase 8B , 160055</address>
+                            <div class="d-flex">
+                                <a href="tel:+91-9503309555"
+                                    class="text-white mb-1 text-decoration-none d-block fw-semibold"><i
+                                        class="bi bi-telephone"></i> +91-9503309555 |</a>
+
+                                <a href="tel:+91-8208498358"
+                                    class="text-white mb-1 text-decoration-none d-block fw-semibold"><i
+                                        class="bi bi-telephone"></i> +91-8208498358</a>
+
+                            </div>
+                            <a href="mailto:help@thepixelbot.com"
+                                class="text-white mb-1 text-decoration-none d-block fw-semibold"><i
+                                    class="bi bi-envelope"></i> help@thepixelbot.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <a href="#home-section">
+            <img class="footer-logo" src="../images/pixel-icon-1.svg" alt="footer logo">
+        </a>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jarallax-element.min.js"></script>
+    <script src="js/lozad.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/ParticleHead.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed(".typed-words", {
+            strings: ["Future in Focus."],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+        });
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/disable-ios-scroll.js"></script>
+    <script src="../js/formHandler.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
+
 </html>
