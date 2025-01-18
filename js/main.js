@@ -322,3 +322,28 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 animatedEls.forEach((el) => observer.observe(el));
+
+
+// bellow script for portfolio section 
+const portfolioFigures = document.querySelectorAll('.portfolio-main figure');
+const portfolioSidebarContent = document.querySelectorAll('.portfolio-content');
+  
+window.addEventListener('scroll', () => {
+	portfolioFigures.forEach((figure, index) => {
+	console.log("figure" + figure);
+	console.log("index"  + index)
+
+	const rect = figure.getBoundingClientRect();
+	const inView = rect.top < window.innerHeight && rect.bottom > 0;
+
+	if (inView) {
+		portfolioSidebarContent.forEach((content) =>
+		content.classList.remove('active')
+		);
+		portfolioSidebarContent[index].classList.add('active');
+		figure.querySelector('img').classList.add('scroll-active');
+	} else {
+		figure.querySelector('img').classList.remove('scroll-active');
+	}
+	});
+});
